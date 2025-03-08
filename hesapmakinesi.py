@@ -23,12 +23,12 @@ def tam_bolme(a, b):
     return a // b
 
 def main():
-    # İşlem fonksiyonlarını bir sözlükte toplama
+    
     islemler = {
         "+": toplama,
         "-": cikarma,
         "*": carpma,
-        "x": carpma,  # Alternatif çarpma simgesi
+        "x": carpma,  
         "/": bolme,
         "**": ussu,
         "%": mod_alma,
