@@ -35,10 +35,8 @@ def main():
         "//": tam_bolme
     }
 
-    # Kullanıcıdan işlemi alma
     hesap = input("Hesaplanacak İşlemi Girin (Örneğin 5 + 3): ")
 
-    # Parçalara ayırmak ve verileri hazırlamak
     try:
         ilk, islem, ikinci = hesap.split(" ")
         ilk_sayi = int(ilk)
@@ -47,7 +45,6 @@ def main():
         print("Geçerli bir işlem yazın! Örneğin: 10 + 1")
         return
 
-    # İşlemi kontrol et ve sonucu hesapla
     if islem in islemler:
         sonuc = islemler[islem](ilk_sayi, ikinci_sayi)
         print(f"{hesap} = {sonuc}")
